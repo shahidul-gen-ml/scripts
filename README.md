@@ -4,10 +4,14 @@
 - RUN the command in terminal
 
     ```console
-    python test.py -f Test/fold_1
+    python test.py -f FOLDER_PATH
     ```
 
-### For Help
+    ```console
+    example: python test.py -f Test/fold_1
+    ```
+
+## For Help
 
 ```console
 usage: txt_change.py [-h] [-f FOLDER_PATH]
@@ -18,7 +22,7 @@ optional arguments:
                         Folder path to change class id
 ```
 
-#### Example Folder Structure
+### Example Folder Structure
 
 ```console
 Test
