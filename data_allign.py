@@ -18,7 +18,16 @@ class_name = [
 ]
 
 for i in range(len(class_name)):
-    # generate csv file with index and class_name
     with open('class_name.csv', 'a') as f:
-        # f.write(str(i) + ',' + class_name[i] + '\n')
         f.write(f"{i},{class_name[i]}\n")
+
+# convert class_name list to dictionary
+class_name_dict = {}
+for i in range(len(class_name)):
+    class_name_dict[i] = class_name[i]
+
+
+def get_id_from_class_name(class_name):
+    for key, value in class_name_dict.items():
+        if value == class_name:
+            return key
