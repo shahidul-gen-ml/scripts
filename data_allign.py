@@ -25,6 +25,7 @@ for i in range(len(class_name)):
 class_name_dict = {}
 for i in range(len(class_name)):
     class_name_dict[i] = class_name[i]
+print(class_name_dict)
 
 
 def get_id_from_class_name(class_name):
