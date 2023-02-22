@@ -1,3 +1,5 @@
+#Example: python html_generator.py --vf /media/shahidul/store1/generated_glosses/আজ --fn ottachar.html --w 320 --h 240
+
 import os
 import argparse
 
@@ -11,8 +13,16 @@ parser.add_argument('--file_name',
                     type=str,
                     default='index.html',
                     help='name of the html file')
-parser.add_argument('--width', '--w', default=320, type=int, help='width of the video')
-parser.add_argument('--height', '--h', default=240, type=int, help='height of the video')
+parser.add_argument('--width',
+                    '--w',
+                    default=320,
+                    type=int,
+                    help='width of the video')
+parser.add_argument('--height',
+                    '--h',
+                    default=240,
+                    type=int,
+                    help='height of the video')
 
 args = parser.parse_args()
 
