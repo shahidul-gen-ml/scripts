@@ -1,45 +1,43 @@
-# YOLO Training Data cleaning process after annotation
-
-- Copy the complete list of classes that we are utilizing in the `darknet.yml` file and paste it into the **class name** variable found in the `data_allign.py` file.
-- RUN the command in terminal
-
-    ```console
-    python test.py -f FOLDER_PATH
-    ```
-
-    ```console
-    example: python test.py -f Test/fold_1
-    ```
+# HTML generator
 
 ## For Help
 
 ```console
-usage: txt_change.py [-h] [-f FOLDER_PATH]
+usage: html_generator.py [-h] [--video_folder VIDEO_FOLDER] [--file_name FILE_NAME] [--width WIDTH] [--height HEIGHT]
+
+HTML generator For Videos Check
 
 optional arguments:
   -h, --help            show this help message and exit
-  -f FOLDER_PATH, --folder_path FOLDER_PATH
-                        Folder path to change class id
+  --video_folder VIDEO_FOLDER, --vf VIDEO_FOLDER
+                        path to folder with videos
+  --file_name FILE_NAME, --fn FILE_NAME
+                        name of the html file
+  --width WIDTH, --w WIDTH
+                        width of the video
+  --height HEIGHT, --h HEIGHT
+                        height of the video
 ```
 
-### Example Folder Structure
+### Example
 
 ```console
-Test
-├── fold_1
-│   ├── 0
-│   │   ├── 045.txt
-        |── 045.png
+python html_generator.py --vf /media/shahidul/store1/generated_glosses/আজ --fn ottachar.html --w 320 --h 240
+```
 
-Traning
-├── fold_1
-│   ├── 0
-│   │   ├── asdasd.txt
-        |── asdasd.png
+#### Example Folder Structure
 
-Validation
-├── fold_1
-│   ├── 0
-│   │   ├── lol.txt
-        |── lol.png
+```console
+আছে
+├── 1.mp4
+├── 2.mp4
+├── 3.mp4
+না
+├── 1.mp4
+├── 2.mp4
+├── 3.mp4
+মানুষ
+├── 1.mp4
+├── 2.mp4
+├── 3.mp4
 ```
